@@ -2,17 +2,17 @@
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Developing-yellow)
 
-## 📝 Descrição do Projeto
+## Descrição do Projeto
 
 Este projeto consiste no desenvolvimento de um sistema de gestão para um restaurante, no contexto da disciplina de **Programação Orientada a Objetos**. O sistema foi projetado para atender às necessidades da "Semana Vida Plena", com foco não apenas no gerenciamento de pedidos, mas também na geração de insights estratégicos para a tomada de decisão do negócio, simulando as necessidades de um CEO.
 
-## 👥 Integrantes
+## Integrantes
 
 *   Maria Clara de Oliveira Barbosa
 *   Jhon Victor Ramos Martins
 *   Maria Luiza da Silva Monteiro
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 
 O sistema foi modelado para ser capaz de responder a 6 perguntas de negócio essenciais para a gestão do restaurante:
 
@@ -29,12 +29,12 @@ O sistema foi modelado para ser capaz de responder a 6 perguntas de negócio ess
 6.  **Qual prato gera maior faturamento total para o restaurante?**
     *   Identifica os itens mais lucrativos para orientar promoções e investimentos.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 *   **Linguagem:** Java
-*   **Ambiente de Desenvolvimento (IDE):** [Ex: IntelliJ IDEA, VS Code, Eclipse]
+*   **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA e Eclipse
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 Certifique-se de ter o **Java Development Kit (JDK)**, versão 11 ou superior, instalado em sua máquina.
 
