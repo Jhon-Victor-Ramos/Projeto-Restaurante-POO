@@ -25,7 +25,6 @@ public class Stock {
         return this.quantities.getOrDefault(ingredient, 0.0) >= quantityNeeded;
     }
 
-    // Método para imprimir o status (muito útil para testar!)
     public void printStatus() {
         System.out.println("--- ESTOQUE ---");
         this.quantities.forEach((ingredient, quantity) -> {
