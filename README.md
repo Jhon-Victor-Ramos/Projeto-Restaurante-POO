@@ -1,6 +1,6 @@
 # Projeto 1: Sistema de Gestão para Restaurante (Semana Vida Plena)
 
-![Status do Projeto](https://img.shields.io/badge/Status-Developing-yellow)
+![Status do Projeto](https://img.shields.io/badge/Status-Done-green)
 
 ## Descrição do Projeto
 
