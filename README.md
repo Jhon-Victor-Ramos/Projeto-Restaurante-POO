@@ -63,4 +63,4 @@ Certifique-se de ter o **Java Development Kit (JDK)**, versão 11 ou superior, i
 
 ##  UML - Diagrama de Classes
 
-> Imagem que mostra o diagrama de classes está sendo feita.
+![UML-Diagram-Restaurant.png]
