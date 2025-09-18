@@ -1,0 +1,74 @@
+@startuml
+' --- Configuração Visual ---
+skinparam Shadowing false
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+' --- Definição das Classes ---
+class Main {
+  + {static} main(String[] args)
+}
+class Restaurant {
+  - name : String
+  - stock : Stock
+  - menu : List<Dish>
+  - orderHistory : List<Order>
+  - evaluations : List<Evaluation>
+  + addDishToMenu(dish: Dish) : void
+  + addEvaluation(eval: Evaluation) : void
+  + placeOrder(order: Order) : void
+  + getAverageSpendingPerOrder() : double
+  + getMostPopularDish() : Dish
+  + getAverageOrdersPerDay() : double
+  + getAverageRating() : double
+  + getIngredientConsumptionReport() : Map<Ingredient, Double>
+  + getTopGrossingDish() : Dish
+}
+class Stock {
+  - quantities : Map<Ingredient, Double>
+  + add(ingredient: Ingredient, quantity: double) : void
+  + use(ingredient: Ingredient, quantity: double) : void
+  + hasEnough(ingredient: Ingredient, quantityNeeded: double) : boolean
+  + printStatus() : void
+}
+class Client {
+  - id : String
+  - name : String
+}
+class Order {
+  - client : Client
+  - orderedDishes : List<Dish>
+  - orderTimestamp : LocalDateTime
+  + addDish(dish: Dish) : void
+  + calculateTotal() : double
+}
+class Evaluation {
+  - client : Client
+  - rating : int
+  - comment : String
+}
+class Dish {
+  - id : String
+  - name : String
+  - price : double
+  - recipe : Map<Ingredient, Double>
+  + addIngredientToRecipe(ingredient: Ingredient, quantity: double) : void
+}
+class Ingredient {
+  - id : String
+  - name : String
+  - unit : String
+}
+
+' --- Definição das Relações ---
+Main ..> Restaurant : <<uses>>
+Restaurant "1" *-- "1" Stock : gerencia
+Restaurant "1" o-- "*" Dish : compõe o menu
+Restaurant "1" o-- "*" Order : registra
+Restaurant "1" o-- "*" Evaluation : coleta
+Order "1" --> "1" Client : feito por
+Order "1" o-- "1..*" Dish : contém
+Evaluation "1" --> "1" Client : feita por
+Dish "1" *-- "1..*" Ingredient : requer
+Stock "1" *-- "*" Ingredient : controla
+@enduml
