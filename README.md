@@ -6,7 +6,7 @@
 
 Este projeto consiste no desenvolvimento de um sistema de gestão para um restaurante, no contexto da disciplina de **Programação Orientada a Objetos**. O sistema foi projetado para atender às necessidades da "Semana Vida Plena", com foco não apenas no gerenciamento de pedidos, mas também na geração de insights estratégicos para a tomada de decisão do negócio, simulando as necessidades de um CEO.
 
-## Integrantes
+## Integrantes 
 
 *   Maria Clara de Oliveira Barbosa
 *   Jhon Victor Ramos Martins
